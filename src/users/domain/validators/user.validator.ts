@@ -19,17 +19,17 @@ export class UserRules {
   @IsString()
   @IsEmail()
   @IsNotEmpty()
-
   email: string
+
   @MaxLength(100)
   @IsString()
   @IsNotEmpty()
-
   password: string
+
   @IsDate()
   @IsOptional()
-
   createdAt?: Date
+
   constructor({ email, name, password, createdAt }: UserProps) {
     Object.assign(this, { email, name, password, createdAt })
   }
