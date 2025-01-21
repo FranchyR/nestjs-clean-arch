@@ -99,4 +99,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 ## Comando para migração
-npx dotenv-cli -e .env.development -- npx prisma migrate --schema ./src/shared/infrastructure/database/prisma/schema.prisma
+npx dotenv-cli -e .env.development -- npx prisma migrate dev --schema ./src/shared/infrastructure/database/prisma/schema.prisma
